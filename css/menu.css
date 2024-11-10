@@ -1,0 +1,103 @@
+/* Reset y estilo básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "";
+}
+
+body {
+    background-image: url("../imagen/fondoooooo.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center bottom;
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-between;
+}
+
+/* Encabezado y navegación */
+.encabezado {
+    display: flex; 
+    align-items: center;
+    justify-content: end;
+    z-index: 10;
+    background: none;
+    height: 4rem;
+    width: 100%;
+}
+
+.listaNav {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.listaNav a {
+    font-family: "poiret";
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+.inicio:hover {
+    color: rgb(255, 0, 0);
+}
+
+/* Galería */
+.contenedor-galeria .galeria {
+    width: 100%;
+    max-width: 21rem;
+    height: auto;
+    margin: 1rem auto;
+    border: 6px double #000000;
+    border-radius: 2%;
+}
+
+/* Footer */
+footer {
+    background-color: #fff;
+    padding: 20px 0;
+    width: 100%;
+    text-align: center;
+    color: #000000;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+    .contenedor-galeria .galeria {
+        width: 80%;
+    }
+
+    .footer-columnas {
+        width: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    .contenedor-galeria .galeria {
+        width: 90%;
+    }
+
+    .footer-columnas {
+        width: 100%;
+    }
+
+    .listaNav a {
+        font-size: 1.2rem;
+        padding: 0.5rem;
+    }
+}

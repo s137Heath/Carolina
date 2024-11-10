@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+   
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propósitos</title>
+    <link rel="icon" href="imagen/logo.jfif">
+    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="momentos.html">
+    <link rel="stylesheet" href="como-me-enamoré.html">
+    <link rel="stylesheet" href="../index.html">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="encabezado">
+    <!-- Logo -->
+            <img src="" alt="">
+    <!-- Barra menú -->
+            <nav>
+                <ul class="listaNav">
+                    <li><a href="../index.html" class="inicio">Inicio</a></li>
+                    <li><a href="como-me-enamoré.html">¿Cómo me enamoré?</a></li>
+                    <li><a href="momentos.html">Momentos</a></li>
+                    <li><a href="proposito.html">Propósitos</a></li>
+                    <h1 class="separacion"> | </h1>
+            </nav>
+
+            <div class="iconos">
+                <a href="https://discord.gg/usy7WFN4xv" target="_blank"><i class="fa-brands fa-discord"></i></a>   
+            </div>
+            </div>
+    </header>
+
+    <main>
+
+        <section id="">
+
+            <div class="contenedor">
+
+                <div class="contenedor-galeria">
+                    <h1 class="titulo-galeria">Explorar nuestro mundo</h1>
+                    <div class="galeria">
+                        <img src="../imagen/15.jpeg" alt="imagen 1">
+                        <div class="capa">
+                            <p>Quiero poder crear momentos juntos, que recordaremos toda una vida, momentos llenos de amor y cariño y que fortalezca nuestra relación. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="contenedor-galeria">
+                    <h1 class="titulo-galeria">Contigo</h1>
+                    <div class="galeria">
+                        <img src="../imagen/14.gif" alt="Imagen 2">
+                        <div class="capa">
+                            <p>Quiero estar a tu lado, poder sentir todo de ti, que cada día que pase permanecer contigo. Eres todo lo que quiero en mi vida, hoy, mañana y siempre.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="contenedor-galeria">
+                    <h1 class="titulo-galeria">Ser tu refugio</h1>
+                    <div class="galeria">
+                        <img src="../imagen/13.gif" alt="Imagen 3">
+                        <div class="capa">
+                            <p>Quiero ser tu apoyo emocional en tu vida, bajo cualquier circunstancia, que sepamos que ambos estaremos aquí. Dando lo mejor de nosotros para seguir adelante como tanto lo queremos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contenedor">
+            
+            <div class="contenedor-galeria">
+                <h1 class="titulo-galeria">Siempre tú</h1>
+                <div class="galeria">
+                    <img src="../imagen/16.jpeg" alt="Imagen 4">
+                    <div class="capa">
+                        <p>Cada día solo me sigo enamorando de ti, siempre estás en mis pensamientos, solo tú. Tú eres quien tiene todo mi corazón y quiero eso siempre, porque tú eres la mujer con la que quiero compartir todo.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contenedor-galeria">
+                <h1 class="titulo-galeria">Deseos...</h1>
+                <div class="galeria">
+                    <img src="../imagen/19.jpeg" alt="Imagen 5">
+                    <div class="capa">
+                        <p>¿Sabes lo mucho que anhelo despertar y tenerte a mi lado? Sería algo maravilloso, que siempre estés ahí al despertar, saber que estás conmigo, que juntos nos acompañaremos por el resto de nuestras vidas. </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contenedor-galeria">
+                <h1 class="titulo-galeria">My little queen bee♥</h1>
+                <div class="galeria">
+                    <img src="../imagen/22.jpeg" alt="Imagen 6">
+                    <div class="capa">
+                        <p>Carolina, quiero tener todo contigo, que siempre seas mi compañera, la mujer que esté a mi lado y que juntos podamos lograr todo lo que nos propongamos. Sé siempre tú, mi Eli preciosa. Te adoro con todo mi corazón. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </section>
+
+
+    </main>
+
+</body>
+
+<!-- Audio en bucle -->
+<audio id="affection" src="audio/affection.mp3" autoplay loop></audio>
+
+<!-- Script para cambiar de secciones sin recargar la página -->
+<script>
+    // Obtiene el elemento de audio
+    const musica = document.getElementById("affection");
+
+    // Función para alternar entre reproducir y pausar el audio
+    function toggleMusica() {
+        if (musica.paused) {
+            musica.play();
+        } else {
+            musica.pause();
+        }
+    }
+
+    // Función para mostrar la sección seleccionada y ocultar las demás
+    function mostrarSeccion(seccionId) {
+        // Oculta todas las secciones
+        const secciones = document.querySelectorAll('.seccion');
+        secciones.forEach(seccion => seccion.classList.remove('activo'));
+
+        // Muestra la sección seleccionada
+        const seccionActiva = document.getElementById(seccionId);
+        seccionActiva.classList.add('activo');
+    }
+</script>
+
+<!-- Estilos en línea para mostrar solo la sección activa -->
+<style>
+    .seccion { display: none; } /* Oculta todas las secciones */
+    .activo { display: block; } /* Muestra solo la sección activa */
+</style>
+
+</html>
